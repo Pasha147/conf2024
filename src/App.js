@@ -2,6 +2,7 @@
 import './App.css';
 import Header from './compontents/header'
 import Main from './compontents/main';
+import Menu from './compontents/menu';
 
 function App() {
  
@@ -9,6 +10,7 @@ function App() {
     <div className="App">
      
       <Header/>
+      <Menu/>
       <Main/>
 
      

@@ -11,8 +11,8 @@ export default function Main() {
   });
 
   return (
-    <main className={cl.main}>
-      <div className="container">
+    <div className="container">
+      <main className={cl.main}>
         {links.map((link, n) => {
           return (
             <article key={`artKey${n}`} id={`artId${n}`}>
@@ -20,7 +20,7 @@ export default function Main() {
             </article>
           );
         })}
-      </div>
-    </main>
+      </main>
+    </div>
   );
 }

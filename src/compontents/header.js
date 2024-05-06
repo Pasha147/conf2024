@@ -31,12 +31,12 @@ export default function Header() {
             <span></span>
           </div>
         </div>
-        <nav className={burMenu ? cl.nav : [cl.nav, cl.navOff].join(" ")}>
+        <nav className={burMenu ? cl.nav : [cl.h_nav, cl.navOff].join(" ")}>
           {links.map((link, num) => {
             return (
               <div
-                key={`nav${num}`}
-                id={`nav${num}`}
+                key={`h_nav${num}`}
+                id={`h_nav${num}`}
                 href="/"
                 className={cl.navLink}
                 onClick={() => handleClick(num)}
