@@ -1,20 +1,20 @@
 import cl from "./header.module.css";
 import { useState } from "react";
-import { links } from "../appdata";
+// import { links } from "../appdata";
 
 export default function Header() {
-  const [burMenu, setBurMenu] = useState(false);
+  // const [burMenu, setBurMenu] = useState(false);
 
-  const handleClick = (num) => {
-    // console.log(num);
-    const square = document.getElementById(`artId${num}`);
-    square.scrollIntoView({
-      behavior: 'smooth'
-    });
-    // window.scrollBy({
-    //   top: -200
-    // })
-  };
+  // const handleClick = (num) => {
+  //   // console.log(num);
+  //   const square = document.getElementById(`artId${num}`);
+  //   square.scrollIntoView({
+  //     behavior: 'smooth'
+  //   });
+  //   // window.scrollBy({
+  //   //   top: -200
+  //   // })
+  // };
   return (
     <header className={cl.header}>
       <div className="container">
