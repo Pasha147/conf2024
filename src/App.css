@@ -1,36 +1,41 @@
-
 :root {
---headerHeight:150px;
---navTop: calc(var(--headerHeight) + 10px);
---navRight:0.5rem;
---col1: rgb(152, 98, 224);
+  --headerHeight: 150px;
+  --h1TextSize: 5rem;
+  --h2TextSize: 2rem;
+  --navTop: calc(var(--headerHeight) + 10px);
+  --navRight: 0.5rem;
+  --colHead:rgb(32 32 210);
+  --col1: rgb(152, 98, 224);
 }
 
-.App{
+* {
+  box-sizing: border-box;
+}
+
+.App {
   min-height: 100vh;
   width: 100%;
   height: 100%;
   margin: 0 auto;
   /* position: relative; */
-  
-
 }
 
 .container {
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 10px;
- 
 }
 
-h1,h2{
+h1,
+h2 {
   text-align: center;
 }
 
 @media (max-width: 500px) {
   :root {
-    --headerHeight:100px;
-    --navRight:0.1rem;
+    --headerHeight: 100px;
+    --h1TextSize: 3.25rem;
+    --h2TextSize: 1.25rem;
+    --navRight: 0.1rem;
   }
- 
 }

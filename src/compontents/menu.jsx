@@ -14,30 +14,31 @@ export default function Menu() {
 
   return (
     <nav className={cl.nav}>
-      <div
-        className={
-          burMenu ? [cl.m_burger, cl.m_burgerOff].join(" ") : cl.m_burger
-        }
-        onClick={() => setBurMenu((prev) => !prev)}
-      >
-        <span></span>
+      <div className={cl.m_burg}>
+        <div onClick={() => setBurMenu((prev) => !prev)}>
+          <div></div>
+          <div></div>
+          <div></div>
+         
+        </div>
       </div>
       <ul>
-      {links.map((link, num) => {
-        return (
-          <li
-            key={`nav${num}`}
-            id={`nav${num}`}
-            href="/"
-            className={cl.navLink}
-            onClick={() => handleClick(num)}
-          >
-          <span className={cl.liNum}>{`${num + 1}`}</span>
-          <span className={burMenu ? cl.liNameOn: cl.liNameOff}>{`${link.name}`}</span>
-          </li>
-        );
-      })}
-
+        {links.map((link, num) => {
+          return (
+            <li
+              key={`nav${num}`}
+              id={`nav${num}`}
+              href="/"
+              className={cl.navLink}
+              onClick={() => handleClick(num)}
+            >
+              <span className={cl.liNum}>{`${num + 1}`}</span>
+              <span
+                className={burMenu ? cl.liNameOn : cl.liNameOff}
+              >{`${link.name}`}</span>
+            </li>
+          );
+        })}
       </ul>
     </nav>
   );
