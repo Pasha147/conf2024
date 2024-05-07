@@ -1,6 +1,8 @@
 
 :root {
 --headerHeight:150px;
+--navTop: calc(var(--headerHeight) + 10px);
+--navRight:0.5rem;
 --col1: rgb(152, 98, 224);
 }
 
@@ -28,6 +30,7 @@ h1,h2{
 @media (max-width: 500px) {
   :root {
     --headerHeight:100px;
+    --navRight:0.1rem;
   }
  
 }

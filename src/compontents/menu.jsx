@@ -22,17 +22,23 @@ export default function Menu() {
       >
         <span></span>
       </div>
+      <ul>
       {links.map((link, num) => {
         return (
-          <div
+          <li
             key={`nav${num}`}
             id={`nav${num}`}
             href="/"
             className={cl.navLink}
             onClick={() => handleClick(num)}
-          >{`${num + 1} ${link.name}`}</div>
+          >
+          <span className={cl.liNum}>{`${num + 1}`}</span>
+          <span className={burMenu ? cl.liNameOn: cl.liNameOff}>{`${link.name}`}</span>
+          </li>
         );
       })}
+
+      </ul>
     </nav>
   );
 }

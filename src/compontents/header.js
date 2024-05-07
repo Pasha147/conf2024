@@ -22,16 +22,16 @@ export default function Header() {
           <a className={cl.link_logo} href="/">
             <img className={cl.h_logo} src="./img/logo.jpg" alt="Logo"></img>
           </a>
-          <div
+          {/* <div
             className={
               burMenu ? [cl.h_burger, cl.h_burgerOff].join(" ") : cl.h_burger
             }
             onClick={() => setBurMenu((prev) => !prev)}
           >
             <span></span>
-          </div>
+          </div> */}
         </div>
-        <nav className={burMenu ? cl.nav : [cl.h_nav, cl.navOff].join(" ")}>
+        {/* <nav className={burMenu ? cl.nav : [cl.h_nav, cl.navOff].join(" ")}>
           {links.map((link, num) => {
             return (
               <div
@@ -43,7 +43,7 @@ export default function Header() {
               >{`${num + 1} ${link.name}`}</div>
             );
           })}
-        </nav>
+        </nav> */}
       </div>
     </header>
   );

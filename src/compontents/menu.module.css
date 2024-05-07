@@ -1,54 +1,93 @@
 .nav {
   position: fixed;
-  right: 20px;
-  top: 200px;
+  right: var(--navRight);
+  top: var(--navTop);
   z-index: 5;
+  padding: 5px;
+  border-radius: 0.5rem;
 
+  background-color: rgba(0, 255, 255, 0.51);
+  /* background-color: transparent; */
+  opacity: 90%;
+}
+.navLink {
+  padding: 0;
+
+  margin: 0.5rem 0;
   background-color: aqua;
+  opacity: 90%;
+  border-radius: 0.25rem;
+}
+.nav ul{
+  list-style-type: none;
+  padding: 0;
+  
+}
+.liNum{
+
+  width: 1.5rem;
+  height: 1.5rem;
+  /* padding: 0.25rem; */
+  border-radius: 50%;
+  border: 2px solid rgb(44, 160, 160);
+  display: inline-block;
+    text-align: center;
+}
+.liNameOn{
+  
+}
+.liNameOff{
+  display: none;
+}
+
+
+.navOff {
+  display: none;
+  
 }
 
 .m_burger {
-    display: block;
-    position: relative;
-    width: 30px;
-    height: 21px;
-    position: relative;
-    margin-bottom: 10px;
-    z-index: 3;
-  }
-  .m_burger::after,
-  .m_burger::before {
-    content: "";
-    background: var(--col1);
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    left: 0;
-    transition: all 0.3s ease 0s;
-  }
-  .m_burger::before {
-    top: 0;
-  }
-  .m_burger::after {
-    bottom: 0;
-  }
-  .m_burger span {
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background:var(--col1);
-    top: 49%;
-    transition: all 0.3s ease 0s;
-  }
-  .m_burgerOff span{
-           transform: scale(0);
-  }
-  .m_burgerOff::after{
-    transform: rotate(-45deg);
-    bottom: 11px;
-  }
-  .m_burgerOff::before{
-    transform: rotate(45deg);
-    top: 8px;
-    left: 1px;
-  }
+  display: block;
+  position: relative;
+  width: 30px;
+  height: 21px;
+  position: relative;
+  margin-bottom: 10px;
+  z-index: 3;
+}
+.m_burger::after,
+.m_burger::before {
+  content: "";
+  background: var(--col1);
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  transition: all 0.3s ease 0s;
+}
+.m_burger::before {
+  top: 0;
+}
+.m_burger::after {
+  bottom: 0;
+}
+.m_burger span {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: var(--col1);
+  top: 49%;
+  transition: all 0.3s ease 0s;
+}
+.m_burgerOff span {
+  transform: scale(0);
+}
+.m_burgerOff::after {
+  transform: rotate(-45deg);
+  bottom: 11px;
+}
+.m_burgerOff::before {
+  transform: rotate(45deg);
+  top: 8px;
+  left: 1px;
+}
