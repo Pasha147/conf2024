@@ -48,10 +48,12 @@
   position: absolute;
   right: 0.25rem;
   top: 0.125rem;
-  width: 4rem;
+  width: var(--langBtnWidth);
   height: 2rem;
   background-color: var(--col1);
   color: aliceblue;
+  padding: 2px;
+  border-radius: 0.25rem;
 }
 
 /* 
