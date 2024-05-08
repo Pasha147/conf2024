@@ -236,9 +236,9 @@ text.En.main.articles[2] = (
       forms for each participant to the address of the Organizing Committee.
     </p>
     <p>
-      Participation in the conference is
+      Participation in the conference is 
       <em>
-        <b>free</b>
+        <b> free</b>
       </em>
       .
     </p>

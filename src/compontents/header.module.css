@@ -46,9 +46,10 @@
 
 .langBtn{
   position: absolute;
-  right: 0.125rem;
+  right: 0.25rem;
   top: 0.125rem;
-  width: 3rem;
+  width: 4rem;
+  height: 2rem;
   background-color: var(--col1);
   color: aliceblue;
 }
