@@ -1,9 +1,10 @@
 import cl from "./menu.module.css";
-import { links } from "../appdata";
+// import { links } from "../appdata";
 import { useState } from "react";
 
-export default function Menu() {
+export default function Menu(props) {
   const [burMenu, setBurMenu] = useState(false);
+  let links=props.textCont.links
   const handleClick = (num) => {
     // console.log(num);
     const square = document.getElementById(`artId${num}`);
@@ -12,12 +13,14 @@ export default function Menu() {
     });
   };
 
+
+
   return (
     <nav className={cl.nav}>
       <div className={cl.m_burg}>
         <div
           className={burMenu ? cl.m_burgOn : cl.m_burgOff}
-          onClick={() => setBurMenu((prev) => !prev)}
+          onClick={()=>setBurMenu((prev) => !prev)}
         >
           <div></div>
           <div></div>

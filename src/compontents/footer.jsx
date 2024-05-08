@@ -1,18 +1,20 @@
 import cl from "./footer.module.css";
 
-export default function Footer() {
+export default function Footer(props) {
+  let textCont=props.textCont
   return (
     <footer className={cl.footer}>
       <p>
-        Інститут механіки ім.С.П.Тимошенко НАН України. <br />
-        03057 Київ, Україна, вул. Нестерова, 3.
+        {textCont.p1} <br />
+        {textCont.p2}
         <br />
       
       <span style={{ whiteSpace: "nowrap" }}>
-        Email: conference@inmech.kyiv.ua{" "}
+      {textCont.em}
       </span>
       <br/>
-      <span style={{ whiteSpace: "nowrap" }}>Тел: +380(63) 369-38-97 </span>
+      <span style={{ whiteSpace: "nowrap" }}>
+      {textCont.phone} </span>
       </p>
     </footer>
   );
