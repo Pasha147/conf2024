@@ -1,4 +1,6 @@
 :root {
+  --fonBgCol: rgba(128, 128, 128, 0.26);
+  --appCol: aliceblue;
   --headerHeight: 150px;
   --h1TextSize: 5rem;
   --h2TextSize: 2rem;
@@ -6,6 +8,7 @@
   --navRight: 0.5rem;
   --colHead:rgb(32 32 210);
   --col1: rgb(152, 98, 224);
+  --firstArtFont: 1.75rem;
 }
 
 * {
@@ -17,6 +20,7 @@
   width: 100%;
   height: 100%;
   margin: 0 auto;
+  background-color:var(--fonBgCol);
   /* position: relative; */
 }
 
@@ -30,12 +34,33 @@ h1,
 h2 {
   text-align: center;
 }
-
+@media (max-width: 600px) {
+  :root {
+    --headerHeight: 125px;
+    --h1TextSize: 4rem;
+    --h2TextSize: 1.75rem;
+    --navRight: 1rem;
+    --navTop: 50%;
+    --firstArtFont: 1.25rem;
+  }
+}
 @media (max-width: 500px) {
   :root {
     --headerHeight: 100px;
     --h1TextSize: 3.25rem;
     --h2TextSize: 1.25rem;
     --navRight: 0.1rem;
+    --navTop: 50%;
+    --firstArtFont: 1.125rem;
+  }
+}
+@media (max-width: 400px) {
+  :root {
+    --headerHeight: 90px;
+    --h1TextSize: 3rem;
+    --h2TextSize: 1rem;
+    --navRight: 0.1rem;
+    --navTop: 50%;
+    --firstArtFont: 1rem;
   }
 }

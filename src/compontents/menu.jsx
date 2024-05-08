@@ -15,11 +15,13 @@ export default function Menu() {
   return (
     <nav className={cl.nav}>
       <div className={cl.m_burg}>
-        <div onClick={() => setBurMenu((prev) => !prev)}>
+        <div
+          className={burMenu ? cl.m_burgOn : cl.m_burgOff}
+          onClick={() => setBurMenu((prev) => !prev)}
+        >
           <div></div>
           <div></div>
           <div></div>
-         
         </div>
       </div>
       <ul>
@@ -32,10 +34,12 @@ export default function Menu() {
               className={cl.navLink}
               onClick={() => handleClick(num)}
             >
-              <span className={cl.liNum}>{`${num + 1}`}</span>
-              <span
-                className={burMenu ? cl.liNameOn : cl.liNameOff}
-              >{`${link.name}`}</span>
+              <div className={cl.liNum}>
+                <span>{`${num + 1}`}</span>
+              </div>
+              <div className={burMenu ? cl.liNameOn : cl.liNameOff}>
+                <span>{`${link.name}`}</span>
+              </div>
             </li>
           );
         })}

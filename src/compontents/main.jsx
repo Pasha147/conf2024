@@ -15,7 +15,7 @@ export default function Main() {
       <main className={cl.main}>
         {links.map((link, n) => {
           return (
-            <article key={`artKey${n}`} id={`artId${n}`}>
+            <article className={cl.article} key={`artKey${n}`} id={`artId${n}`}>
               {item[n]}
             </article>
           );

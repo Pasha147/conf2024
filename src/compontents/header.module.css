@@ -4,6 +4,7 @@
   top: 0;
   left: 0;
   box-shadow: 5px 5px 10px #1e2828b8;
+  background-color:var(--appCol);
   /* height: var(--headerHeight); */
 }
 
@@ -14,6 +15,7 @@
 
 .link_logo{
   height: 100%;
+  padding: 3px;
   
 }
 .link_logo img{
