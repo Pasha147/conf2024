@@ -9,13 +9,13 @@
 
 .article{
   background-color:var(--appCol);
-    margin: 1rem;
+    margin: 1rem 0rem;
 
     padding: 1rem;
     /* border-bottom: #645cff 2px solid; */
     border-radius: 0.5rem;
     box-shadow: 5px 5px 10px #1e2828b8;
-    margin: 1rem 0.5rem;
+   
 }
 .main article:nth-child(1){
   font-size: var(--firstArtFont);

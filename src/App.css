@@ -43,28 +43,28 @@ h2 {
     --langBtnWidth:3rem;
     --navRight: 1rem;
     --navTop: 50%;
-    --firstArtFont: 1.25rem;
+    --firstArtFont: 1.75rem;
   }
 }
 @media (max-width: 500px) {
   :root {
     --headerHeight: 100px;
     --h1TextSize: 3.25rem;
-    --h2TextSize: 1.25rem;
+    --h2TextSize: 1.4rem;
     --langBtnWidth:2rem;
     --navRight: 0.1rem;
     --navTop: 50%;
-    --firstArtFont: 1.125rem;
+    --firstArtFont: 1.4rem;
   }
 }
 @media (max-width: 400px) {
   :root {
     --headerHeight: 90px;
     --h1TextSize: 2rem;
-    --h2TextSize: 1rem;
+    --h2TextSize: 1.125rem;
     --langBtnWidth:1.75rem;
     --navRight: 0.1rem;
     --navTop: 50%;
-    --firstArtFont: 1rem;
+    --firstArtFont: 1.25rem;
   }
 }

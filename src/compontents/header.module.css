@@ -10,12 +10,14 @@
 }
 
 .h_body{
- height: var(--headerHeight);
+
  display: flex;
+ align-items: center;
 }
 
 .link_logo{
-  height: 100%;
+  height: var(--headerHeight);
+  /* height: 100%; */
   padding: 3px;
   
 }
