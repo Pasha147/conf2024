@@ -288,7 +288,7 @@ text.En.main.articles[4] = (
     <ul>
       <li>
         Mechanics of composite and heterogeneous media: J.J.Rushchitsky,
-        Ye.A.Storozhuk, V.A.Decret
+        Ye.A.Storozhuk, V.A.Dekret
       </li>
 
       <li>Mechanics of shell systems: O.Ya.Grigorenko, P.Z.Lugovoy</li>
