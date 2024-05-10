@@ -80,8 +80,8 @@ text.Ukr.main.articles[0] = (
         конференції «Механіка: сучасність і перспективи»,
       </b>
       <br />
-      Конференція відбуватиметься в<br />
-      Інституті механіки ім. С.П Тимошенка <br />
+      Конференція відбуватиметься в
+      Інституті механіки ім. С.П.Тимошенка 
       НАН України
       <br />
       7–11 жовтня 2024 р.
@@ -201,8 +201,7 @@ text.En.main.articles[0] = (
       </b>
       <br />
       The conference will take place at the
-      <br />
-      S.P. Timoshenko Institute of Mechanics, <br />
+      S.P.Timoshenko Institute of Mechanics, 
       National Academy of Sciences of Ukraine
       <br />
       October 7-11, 2024
