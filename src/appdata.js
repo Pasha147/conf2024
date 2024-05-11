@@ -1,10 +1,10 @@
-export const links = [
-  { name: "Про конференцію", nameEn: "About conference" },
-  { name: "Напрямки", nameEn: "Research fields" },
-  { name: "Щодо участі", nameEn: "To participate in" },
-  { name: "Вимоги", nameEn: "Requirements" },
-  { name: "Співголови", nameEn: "Co-chairs" },
-];
+// export const links = [
+//   { name: "Про конференцію", nameEn: "About conference" },
+//   { name: "Напрямки", nameEn: "Research fields" },
+//   { name: "Щодо участі", nameEn: "To participate in" },
+//   { name: "Вимоги", nameEn: "Requirements" },
+//   { name: "Співголови", nameEn: "Co-chairs" },
+// ];
 
 export const headerInter = {
   Ukr: {
@@ -30,6 +30,7 @@ export const text = {
         { name: "Щодо участі" },
         { name: "Вимоги" },
         { name: "Співголови" },
+        { name: "Завантаження" },
       ],
     },
     main: {
@@ -54,6 +55,7 @@ export const text = {
         { name: "To participate in" },
         { name: "Requirements" },
         { name: "Co-chairs" },
+        { name: "Downloads" },
       ],
     },
     main: {
@@ -73,10 +75,10 @@ text.Ukr.main.articles[0] = (
   <>
     <h2>Вельмишановні колеги!</h2>
     <p style={{ textAlign: "center" }}>
-      Організатори запрошують Вас взяти 
-      участь у роботі {` `}<br />
+      Організатори запрошують Вас взяти участь у роботі {` `}
+      <br />
       <b>
-         Міжнародної наукової <br />
+        Міжнародної наукової <br />
         конференції «Механіка: сучасність і перспективи»,
       </b>
       <br />
@@ -157,30 +159,78 @@ text.Ukr.main.articles[4] = (
     <p>
       Співголови оргкомітету:
       <br />
-      В.Л.Богданов, В.М.Назаренко
+      АкадемікНАН України, Докторфізико-математичних наук, В.Л.Богданов, <br />
+      АкадемікНАН України, Доктортехнічних наук, В.М.Назаренко<br />
     </p>
-    <p>Вчений секретар: Ю.О.Чорноіван</p>
+    <p>Вчений секретар:<br /> 
+    Кандидатфізико-математичних наук, Ю.О.Чорноіван<br />
+    </p>
     <p>
       Співголови напрямків конференції: <br />
     </p>
     <ul>
       <li>
-        Механіка композитних та неоднорідних середовищ: Я.Я.Рущицький,
-        Є.А.Сторожук, В.А.Декрет
+        Механіка композитних та неоднорідних середовищ: <br />
+        Докторфізико-математичних наук, В.А.Декрет,<br />
+        Член-кореспондент НАН України, Докторфізико-математичних наук, Я.Я.Рущицький,<br />
+        Докторфізико-математичних наук, Є.А.Сторожук <br /><br />
       </li>
 
-      <li>Механіка оболонкових систем: О.Я.Григоренко, П.З.Луговий</li>
+      <li>Механіка оболонкових систем:<br />
+      Член-кореспондент НАН України, Докторфізико-математичних наук, О.Я.Григоренко,<br />
+      Доктортехнічних наук, П.З.Луговий<br /><br />
+        </li>
       <li>
-        Механіка зв'язних полів у матеріалах та елементах конструкцій:
-        О.З.Галішин, В.Г.Карнаухов
+        Механіка зв'язних полів у матеріалах та елементах конструкцій:<br />
+        Доктортехнічних наук, О.З.Галішин, <br /> 
+        Докторфізико-математичних наук, В.Г.Карнаухов<br /><br />
       </li>
       <li>
-        Механіка руйнування та втома: В.П.Голуб, М.Ф.Селіванов
+        Механіка руйнування та втома:<br />
+        Доктортехнічних наук, В.П.Голуб,<br /> 
+        Член-кореспондент НАН України, Докторфізико-математичних наук, М.Ф.Селіванов<br /><br />
         {/* <span style={{ whiteSpace: 'nowrap' }}> М.Ф.Селіванов </span> */}
       </li>
       <li>
-        Динаміка та стійкість руху механічних систем: В.Д.Кубенко, А.А.Мартинюк
+        Динаміка та стійкість руху механічних систем:<br />
+        Академік НАН України, Докторфізико-математичних наук, В.Д.Кубенко,<br />
+        Академік НАН України, Докторфізико-математичних наук, А.А.Мартинюк<br /><br />
       </li>
+    </ul>
+  </>
+);
+text.Ukr.main.articles[5] = (
+  <>
+    <h2 style={{ textAlign: "start" }}>Завантаження</h2>
+    <ul className="ul_downloads">
+      <li>
+        <a
+          href="./files/announcement_uk.docx"
+          download="./files/announcement_uk.docx"
+        >
+          <img src="./img/file.svg" alt="file"></img>
+          <p>Інформаційний лист</p>
+        </a>
+      </li>
+      <li>
+        <a
+          href="./files/form_uk.doc"
+          download="./files/form_uk.doc"
+        >
+          <img src="./img/file.svg" alt="file"></img>
+          <p>Реєстраційна форма</p>
+        </a>
+      </li>
+      <li>
+        <a
+          href="./files/sample_uk.pdf"
+          download="./files/sample_uk.pdf"
+        >
+          <img src="./img/file.svg" alt="file"></img>
+          <p>Зразок оформлення доповідей</p>
+        </a>
+      </li>
+
     </ul>
   </>
 );
@@ -195,8 +245,7 @@ text.En.main.articles[0] = (
       The organizers invite you to take <br />
       part in the work of the <br />
       <b>
-         International Scientific 
-        Conference "Mechanics: Contemporary Approaches
+        International Scientific Conference "Mechanics: Contemporary Approaches
         and Future Directions",
       </b>
       <br />
@@ -268,7 +317,7 @@ text.En.main.articles[3] = (
       an electronic version of the registration form, as well as samples of
       presentation materials are available on the conference website at {` `}
       <a href="https://inmech.kyiv.ua/l/ua/conferences/">
-         https://inmech.kyiv.ua...
+        https://inmech.kyiv.ua...
       </a>
     </p>
   </>
@@ -279,166 +328,74 @@ text.En.main.articles[4] = (
     <p>
       Co-chairs of the organizing committee:
       <br />
-      V.L.Bohdanov, V.M.Nazarenko
+      Academicianof NAS of Ukraine, Doctor of Physical and Mathematical Sciences V.L.Bohdanov,<br />
+      Academicianof NAS of Ukraine, Doctor of Technical Sciences V.M.Nazarenko<br />
     </p>
-    <p>Scientific secretary: Yu.O.Chornoivan</p>
+    <p>Scientific secretary:<br /> CandidateofPhysical and Mathematical Sciences, Yu.O.Chornoivan</p>
     <p>
       Co-chairs of the conference areas: <br />
     </p>
     <ul>
       <li>
-        Mechanics of composite and heterogeneous media: J.J.Rushchitsky,
-        Ye.A.Storozhuk, V.A.Dekret
+        Mechanics of composite and heterogeneous media:<br />
+        Doctor of Physical and Mathematical Sciences, V.A.Dekret,<br />
+        Corresponding Memberof NAS of Ukraine, Doctor of Physical and Mathematical Sciences, J.J.Rushchitsky,<br />
+        Doctor of Physical and Mathematical Sciences, Ye.A.Storozhuk<br /><br />
       </li>
 
-      <li>Mechanics of shell systems: O.Ya.Grigorenko, P.Z.Lugovoy</li>
+      <li>Mechanics of shell systems:<br />
+      Corresponding Member of NAS of Ukraine, Doctor of Physical and Mathematical Sciences, O.Ya.Grigorenko,<br />
+      Doctor of Technical Sciences, P.Z.Lugovoy<br /><br />
+        </li>
       <li>
-        Mechanics of coherent fields in materials and structural elements:
-        O.Z.Galishyn, V.G.Karnaukhov
+        Mechanics of coherent fields in materials and structural elements:<br />
+        Doctor of Technical Sciences, O.Z.Galishyn,<br />
+        Doctor of Physical and Mathematical Sciences , V.G.Karnaukhov<br /><br />
       </li>
-      <li>Fracture and Fatigue Mechanics: V.P.Golub, M.F.Selivanov</li>
+      <li>Fracture and Fatigue Mechanics:<br />
+      Doctor of Technical Sciences, V.P.Golub,<br />
+      Corresponding Member of NAS of Ukraine, Doctor of Physical and Mathematical Sciences, M.F.Selivanov<br /><br />
+        </li>
       <li>
-        Dynamics and stability of movement of mechanical systems: V.D.Kubenko,
-        A.A.Martyniuk
+        Dynamics and stability of movement of mechanical systems:<br />
+        Academician of NAS of Ukraine, Doctor Physical and Mathematical Sciences, V.D.Kubenko,<br />
+        Academician of NAS of Ukraine, Doctor Physical and Mathematical Sciences, A.A.Martyniuk<br />
       </li>
     </ul>
   </>
 );
-//-------------------------------------------
-// links[0].cont = (
-//   <>
-//     <h2>Вельмишановні колеги!</h2>
-//     <p style={{ textAlign: "center" }}>
-//       Організатори запрошують Вас взяти <br />
-//       участь у роботі{" "}
-//       <b>
-//         Міжнародної наукової <br />
-//         конференції «Механіка: сучасність <br />і перспективи»,
-//       </b>
-//       <br />
-//       Конференція відбуватиметься в<br />
-//       Інституті механіки ім. С.П Тимошенка <br />
-//       НАН України
-//       <br />
-//       7–11 жовтня 2024 р.
-//     </p>
-//   </>
-// );
+text.En.main.articles[5] = (
+  <>
+    <h2 style={{ textAlign: "start" }}>Downloads</h2>
+    <ul className="ul_downloads">
+      <li>
+        <a
+          href="./files/announcement_uk.docx"
+          download="./files/announcement_uk.docx"
+        >
+          <img src="./img/file.svg" alt="file"></img>
+          <p>information letter-message</p>
+        </a>
+      </li>
+      <li>
+        <a
+          href="./files/form_en.doc"
+          download="./files/form_en.doc"
+        >
+          <img src="./img/file.svg" alt="file"></img>
+          <p>Registration form</p>
+        </a>
+      </li>
+      <li>
+        <a
+          href="./files/sample_en.pdf"
+          download="./files/sample_en.pdf"
+        >
+          <img src="./img/file.svg" alt="file"></img>
+          <p>Report design sample</p>
+        </a>
+      </li>
 
-// links[0].contEn = (
-//   <>
-//     <h2>Dear colleagues!</h2>
-//     <p style={{ textAlign: "center" }}>
-//       The organizers invite you to take <br />
-//       part in the work of the
-//       <b>
-//         International Scientific <br />
-//         Conference "Mechanics: Contemporary Approaches <br />
-//         and Future Directions",
-//       </b>
-//       <br />
-//       The conference will take place at the
-//       <br />
-//       S.P. Timoshenko Institute of Mechanics, <br />
-//       National Academy of Sciences of Ukraine
-//       <br />
-//       October 7-11, 2024
-//     </p>
-//   </>
-// );
-
-// links[1].cont = (
-//   <>
-//     <p>На конференції передбачаються доповіді з таких напрямків:</p>
-//     <ol>
-//       <li>Механіка композитних та неоднорідних середовищ</li>
-//       <li>Механіка оболонкових систем</li>
-//       <li>Механіка зв'язних полів у матеріалах та елементах конструкцій</li>
-//       <li>Механіка руйнування та втома</li>
-//       <li>Динаміка та стійкість руху механічних систем</li>
-//     </ol>
-//   </>
-// );
-
-// links[2].cont = (
-//   <>
-//     <h2 style={{ textAlign: "start" }}>
-//       Для участі у роботі конференції необхідно:
-//     </h2>
-//     <p style={{ textAlign: "justify" }}>
-//       До 1 вересня 2024 р. надіслати на адресу Оргкомітету оформлені згідно з
-//       вимогами матеріали доповіді та заповнені реєстраційні форми на кожного
-//       учасника.
-//     </p>
-//     <p>
-//       Участь у конференції{" "}
-//       <em>
-//         <b>безкоштовна</b>
-//       </em>
-//       .
-//     </p>
-//     <p>
-//       Матеріали конференції буде опубліковано на сайті Інституту механіки ім.
-//       С.П. Тимошенка. Кожен учасник, який виступить із доповіддю, отримає
-//       сертифікат із зазначенням загальної кількості академічних годин: 12 год
-//       (0,4 кредита ECTS).
-//     </p>
-//     <p>Доповіді будуть рецензовані комітетом конференції.</p>
-//   </>
-// );
-
-// links[3].cont = (
-//   <>
-//     <h2 style={{ textAlign: "start" }}>
-//       Вимоги до оформлення матеріалів доповіді:
-//     </h2>
-//     <p style={{ textAlign: "justify" }}>
-//       Текст доповіді обсягом 1–3 повністю заповнених сторінки слід підготувати у
-//       вигляді файла формату
-//       <b> PDF</b> за розміщеними на сторінці конференції шаблонами.
-//       <br />
-//       Анкети та тексти доповідей, які стосуються напрямків розвитку механіки
-//       (1–5), просимо надсилати за адресою conference@inmech.kyiv.ua. До розгляду
-//       буде прийматися не більше 2-х доповідей одного учасника. Додаткова
-//       інформація, електронна версія реєстраційної форми, а також зразки
-//       оформлення матеріалів доповіді розміщено на вебсторінці конференції за
-//       адресою:
-//       <a href="https://inmech.kyiv.ua/l/ua/conferences/">
-//         https://inmech.kyiv.ua...
-//       </a>{" "}
-//     </p>
-//   </>
-// );
-
-// links[4].cont = (
-//   <>
-//     <p>
-//       Співголови оргкомітету:
-//       <br />
-//       В.Л.Богданов, В.М.Назаренко
-//     </p>
-//     <p>Вчений секретар: Ю.О.Чорноіван</p>
-//     <p>
-//       Співголови напрямків конференції: <br />
-//     </p>
-//     <ul>
-//       <li>
-//         Механіка композитних та неоднорідних середовищ: Я.Я.Рущицький,
-//         Є.А.Сторожук, В.А.Декрет
-//       </li>
-
-//       <li>Механіка оболонкових систем: О.Я.Григоренко, П.З.Луговий</li>
-//       <li>
-//         Механіка зв'язних полів у матеріалах та елементах конструкцій:
-//         О.З.Галішин, В.Г.Карнаухов
-//       </li>
-//       <li>
-//         Механіка руйнування та втома: В.П.Голуб, М.Ф.Селіванов
-//         {/* <span style={{ whiteSpace: 'nowrap' }}> М.Ф.Селіванов </span> */}
-//       </li>
-//       <li>
-//         Динаміка та стійкість руху механічних систем: В.Д.Кубенко, А.А.Мартинюк
-//       </li>
-//     </ul>
-//   </>
-// );
+    </ul>
+  </>
+);

@@ -35,6 +35,22 @@ h1,
 h2 {
   text-align: center;
 }
+
+.ul_downloads {
+  list-style: none;
+}
+.ul_downloads a{
+  
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  
+}
+/* .ul_downloads p{
+  display: inline-block;
+  
+} */
+
 @media (max-width: 600px) {
   :root {
     --headerHeight: 125px;
