@@ -30,24 +30,23 @@ export default function Main(props) {
     }
 
     let intersectionCallback = (entries) => {
+      let newSecSt=[...artSt]
       entries.forEach((entry) => {
         let articleId = entry.target.id;
         let isIntersecting = entry.isIntersecting;
         let visiblePct = `${Math.floor(entry.intersectionRatio * 100)}%`;
        let n=artSt.findIndex(el=>el.id===articleId)
-       let newSecSt=[...artSt]
+       
       //  console.log(newSecSt);
        newSecSt[n].intersect=isIntersecting
        newSecSt[n].ratio=visiblePct
-       setSecSt([...newSecSt])
-        // console.log(
-        //   `articleId=${articleId}\n 
-        //   isIntersecting=${isIntersecting}\n 
-        //   visiblePct=${visiblePct}\n 
-        //   ----------------------------\n`
-        // );
-        // console.log(newSecSt);
+       
+
+
+       
       });
+      setSecSt([...newSecSt])
+      props.setColorMenu(newSecSt.map((item)=>{return {ratio: item.ratio}}))
     };
 
     const observers = [];

@@ -38,7 +38,7 @@ export default function Menu(props) {
               onClick={() => handleClick(num)}
             >
               <div className={cl.liNum}>
-                <span>{`${num + 1}`}</span>
+                <span>{`${props.colorMenu[num].ratio}`}</span>
               </div>
               <div className={burMenu ? cl.liNameOn : cl.liNameOff}>
                 <span>{`${link.name}`}</span>

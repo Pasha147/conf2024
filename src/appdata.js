@@ -1,21 +1,21 @@
-export const links = [
-  { name: "Про конференцію", nameEn: "About conference" },
-  { name: "Напрямки", nameEn: "Research fields" },
-  { name: "Щодо участі", nameEn: "To participate in" },
-  { name: "Вимоги", nameEn: "Requirements" },
-  { name: "Співголови", nameEn: "Co-chairs" },
-];
+// export const links = [
+//   { name: "Про конференцію", nameEn: "About conference" },
+//   { name: "Напрямки", nameEn: "Research fields" },
+//   { name: "Щодо участі", nameEn: "To participate in" },
+//   { name: "Вимоги", nameEn: "Requirements" },
+//   { name: "Співголови", nameEn: "Co-chairs" },
+// ];
 
-export const headerInter = {
-  Ukr: {
-    h1: "Механіка",
-    h2: "сучасність і перспективи",
-  },
-  En: {
-    h1: "Mechanics",
-    h2: "Contemporary Approaches and Future Directions",
-  },
-};
+// export const headerInter = {
+//   Ukr: {
+//     h1: "Механіка",
+//     h2: "сучасність і перспективи",
+//   },
+//   En: {
+//     h1: "Mechanics",
+//     h2: "Contemporary Approaches and Future Directions",
+//   },
+// };
 
 export const text = {
   Ukr: {
