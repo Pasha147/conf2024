@@ -16,7 +16,7 @@ function App() {
       <Header textCont={textCont.header} lang={lang} setLang={setLang}/>
       <Menu textCont={textCont.menu}/>
       <Main textCont={textCont.main} />
-<DummyComponent />
+{/* <DummyComponent /> */}
       <Footer textCont={textCont.footer}/>
      
     </div>
