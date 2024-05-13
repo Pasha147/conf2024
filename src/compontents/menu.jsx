@@ -1,9 +1,11 @@
 // import Btn from "./btn";
 import cl from "./menu.module.css";
 // import { links } from "../appdata";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 
 export default function Menu(props) {
+  const wrapperRef = useRef(null);
+
   const [burMenu, setBurMenu] = useState(false);
   let links = props.textCont.links;
   const handleClick = (num) => {
@@ -14,8 +16,23 @@ export default function Menu(props) {
     });
   };
 
+  useEffect(() => {
+    // Alert if clicked on outside of element
+    function handleClickOutside(event) {
+      if (wrapperRef.current && !wrapperRef.current.contains(event.target)) {
+        setBurMenu(false);
+      }
+    }
+    // Bind the event listener
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      // Unbind the event listener on clean up
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   return (
-    <nav className={cl.nav}>
+    <nav className={cl.nav} ref={wrapperRef}>
       <div className={cl.m_burg}>
         <div
           className={burMenu ? cl.m_burgOn : cl.m_burgOff}
@@ -35,9 +52,11 @@ export default function Menu(props) {
               // href="/"
               className={cl.navLink}
               onClick={() => handleClick(num)}
-              style={burMenu?{ background: `rgb(222 223 240)`}:
-              { background: `transparent`}
-            }
+              style={
+                burMenu
+                  ? { background: `rgb(222 223 240)` }
+                  : { background: `transparent` }
+              }
             >
               <div
                 className={cl.neonButton}

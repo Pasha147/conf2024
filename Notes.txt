@@ -2,3 +2,5 @@ CSS Custom Properties that Dynamically Update with React & JavaScript
 	https://www.youtube.com/watch?v=nybATB2MoYI&ab_channel=ColbyFayock
 
 	 document.documentElement.style.setProperty("--transp", `${props.ratio / 100}`);
+
+Неразрывный пробел (наук, В.Л.&nbsp;Богданов,)
