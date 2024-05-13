@@ -10,6 +10,11 @@
   --colHead:rgb(32 32 210);
   --col1: rgb(152, 98, 224);
   --firstArtFont: 1.75rem;
+
+  --clr-neon: rgb(32 32 210);
+  --clr-bg: white;
+
+ 
 }
 
 * {
@@ -45,6 +50,17 @@ h2 {
   justify-content: start;
   align-items: center;
   
+}
+
+
+
+.ul_downloads{
+  list-style: none;
+}
+.ul_downloads a{
+  display: flex;
+  justify-content: start;
+  align-items: center;
 }
 
 
