@@ -34,12 +34,12 @@ export default function Main(props) {
       entries.forEach((entry) => {
         let articleId = entry.target.id;
         let isIntersecting = entry.isIntersecting;
-        let visiblePct = `${Math.floor(entry.intersectionRatio * 100)}%`;
+        // let visiblePct = `${Math.floor(entry.intersectionRatio * 100)}%`;
        let n=artSt.findIndex(el=>el.id===articleId)
        
       //  console.log(newSecSt);
        newSecSt[n].intersect=isIntersecting
-       newSecSt[n].ratio=visiblePct
+       newSecSt[n].ratio=Math.floor(entry.intersectionRatio * 100)
        
 
 
@@ -81,11 +81,11 @@ export default function Main(props) {
               key={`artKey${n}`}
               id={`artId${n}`}
             >
-              {`id=${secSt[n].id} 
-              inter=${secSt[n].intersect} ratio=${secSt[n].ratio}`}
+              {/* {`id=${secSt[n].id} 
+              inter=${secSt[n].intersect} ratio=${secSt[n].ratio}`} */}
               {article}
-              {`id=${secSt[n].id} 
-              inter=${secSt[n].intersect} ratio=${secSt[n].ratio}`}
+              {/* {`id=${secSt[n].id} 
+              inter=${secSt[n].intersect} ratio=${secSt[n].ratio}`} */}
             </article>
           );
         })}
