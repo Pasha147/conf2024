@@ -21,7 +21,7 @@ export const text = {
       p1: " Інститут механіки ім.С.П.Тимошенко НАН України.",
       p2: " 03057 Київ, Україна, вул. Нестерова, 3.",
       em: "Email: conference@inmech.kyiv.ua",
-      phone: "Тел: +380(63) 369-38-97",
+      phone: "Тел: +380(98)903-51-05",
     },
   },
   En: {
@@ -46,7 +46,7 @@ export const text = {
       p1: " S.P.Timoshenko Institute of Mechanics, National Academy of Sciences of Ukraine",
       p2: " 03057 Kyiv, Ukraine, str. Nesterova, 3.",
       em: "Email: conference@inmech.kyiv.ua",
-      phone: `Phone: +380(99)999-99-99`,
+      phone: 'Phone: +380(98)903-51-05',
     },
   },
 };
@@ -124,13 +124,9 @@ text.Ukr.main.articles[3] = (
       <br />
       Анкети та тексти доповідей, які стосуються напрямків розвитку механіки
       (1–5), просимо надсилати за адресою conference@inmech.kyiv.ua. До розгляду
-      буде прийматися не більше 2-х доповідей одного учасника. Додаткова
-      інформація, електронна версія реєстраційної форми, а також зразки
-      оформлення матеріалів доповіді розміщено на вебсторінці конференції за
-      адресою: {`  `}
-      <a href="https://inmech.kyiv.ua/l/ua/conferences/">
-        https://inmech.kyiv.ua...
-      </a>{" "}
+      буде прийматися не більше 2-х доповідей одного учасника. 
+      
+     
     </p>
   </>
 );
@@ -140,15 +136,15 @@ text.Ukr.main.articles[4] = (
     <p>
       <b> Співголови оргкомітету:</b>
       <br />
-      Академік НАН України, Доктор фізико-математичних наук, В.Л.&nbsp;Богданов,
+      Академік НАН України, Доктор фізико-математичних наук В.Л.&nbsp;Богданов,
       <br />
-      Академік НАН України, Доктор технічних наук, В.М.&nbsp;Назаренко
+      Академік НАН України, Доктор технічних наук В.М.&nbsp;Назаренко
       <br />
     </p>
     <p>
       <b>Вчений секретар:</b>
       <br />
-      Кандидат фізико-математичних наук, Ю.О.&nbsp;Чорноіван
+      Кандидат фізико-математичних наук Ю.О.&nbsp;Чорноіван
       <br />
     </p>
     <p>
@@ -159,50 +155,50 @@ text.Ukr.main.articles[4] = (
     <ul>
       <li>
         <b> Механіка композитних та неоднорідних середовищ:</b> <br />
-        Член-кореспондент НАН України, Доктор фізико-математичних наук,
+        Член-кореспондент НАН України, Доктор фізико-математичних наук
         Я.Я.&nbsp;Рущицький,
         <br />
-        Доктор фізико-математичних наук, В.А.&nbsp;Декрет,
+        Доктор фізико-математичних наук В.А.&nbsp;Декрет,
         <br />
-        Доктор фізико-математичних наук, Є.А.&nbsp;Сторожук <br />
+        Доктор фізико-математичних наук Є.А.&nbsp;Сторожук <br />
         <br />
       </li>
 
       <li>
         <b>Механіка оболонкових систем:</b>
         <br />
-        Член-кореспондент НАН України, Доктор фізико-математичних наук,
+        Член-кореспондент НАН України, Доктор фізико-математичних наук
         О.Я.&nbsp;Григоренко,
         <br />
-        Доктор технічних наук, П.З.&nbsp;Луговий
+        Доктор технічних наук П.З.&nbsp;Луговий
         <br />
         <br />
       </li>
       <li>
         <b>Механіка зв'язних полів у матеріалах та елементах конструкцій:</b>
         <br />
-        Доктор технічних наук, О.З.&nbsp;Галішин, <br />
-        Доктор фізико-математичних наук, В.Г.&nbsp;Карнаухов
+        Доктор технічних наук О.З.&nbsp;Галішин, <br />
+        Доктор фізико-математичних наук В.Г.&nbsp;Карнаухов
         <br />
         <br />
       </li>
       <li>
         <b>Механіка руйнування та втома:</b>
         <br />
-        Член-кореспондент НАН України, Доктор фізико-математичних наук,
-        М.Ф.&nbsp;Селіванов
+        Член-кореспондент НАН України, Доктор фізико-математичних наук
+        М.Ф.&nbsp;Селіванов,
         <br />
-        Доктор технічних наук, В.П.&nbsp;Голуб,
+        Доктор технічних наук В.П.&nbsp;Голуб
         <br />
         <br />
       </li>
       <li>
         <b>Динаміка та стійкість руху механічних систем:</b>
         <br />
-        Академік НАН України, Доктор фізико-математичних наук,
+        Академік НАН України, Доктор фізико-математичних наук
         В.Д.&nbsp;Кубенко,
         <br />
-        Академік НАН України, Доктор фізико-математичних наук,
+        Академік НАН України, Доктор фізико-математичних наук
         А.А.&nbsp;Мартинюк
         <br />
       </li>
@@ -215,7 +211,7 @@ text.Ukr.main.articles[4] = (
     <br />
     Кандидат технічних наук П.В.&nbsp;Фернаті,
     <br />
-    Кандидат фізико-математичних наук О.О.&nbsp;Хотенко,
+    Кандидат фізико-математичних наук О.О.&nbsp;Хотенко
     <br />
   </>
 );
@@ -326,12 +322,7 @@ text.En.main.articles[3] = (
       <br />
       Questionnaires and texts of reports to the branches of mechanics (1–5)
       should be sent to the address conference@inmech.kyiv.ua. No more than 2
-      reports from one participant will be considered. Additional information,
-      an electronic version of the registration form, as well as samples of
-      presentation materials are available on the conference website at {` `}
-      <a href="https://inmech.kyiv.ua/l/ua/conferences/">
-        https://inmech.kyiv.ua...
-      </a>
+      reports from one participant will be considered. 
     </p>
   </>
 );
@@ -341,16 +332,16 @@ text.En.main.articles[4] = (
     <p>
       <b>Co-chairs of the organizing committee:</b>
       <br />
-      Academicianof NAS of Ukraine, Doctor of Physical and Mathematical Sciences
+      Academician of NAS of Ukraine, Doctor of Physical and Mathematical Sciences
       V.L.&nbsp;Bohdanov,
       <br />
-      Academicianof NAS of Ukraine, Doctor of Technical Sciences
+      Academician of NAS of Ukraine, Doctor of Technical Sciences
       V.M.&nbsp;Nazarenko
       <br />
     </p>
     <p>
       <b>Scientific secretary:</b>
-      <br /> CandidateofPhysical and Mathematical Sciences,
+      <br /> Candidate of Physical and Mathematical Sciences
       Yu.O.&nbsp;Chornoivan
     </p>
     <p>
@@ -360,12 +351,12 @@ text.En.main.articles[4] = (
       <li>
         <b>Mechanics of composite and heterogeneous media:</b>
         <br />
-        Corresponding Memberof NAS of Ukraine, Doctor of Physical and
-        Mathematical Sciences, J.J.&nbsp;Rushchitsky,
+        Corresponding Member of NAS of Ukraine, Doctor of Physical and
+        Mathematical Sciences J.J.&nbsp;Rushchitsky,
         <br />
-        Doctor of Physical and Mathematical Sciences, V.A.&nbsp;Dekret,
+        Doctor of Physical and Mathematical Sciences V.A.&nbsp;Dekret,
         <br />
-        Doctor of Physical and Mathematical Sciences, Ye.A.&nbsp;Storozhuk
+        Doctor of Physical and Mathematical Sciences Ye.A.&nbsp;Storozhuk
         <br />
         <br />
       </li>
@@ -374,9 +365,9 @@ text.En.main.articles[4] = (
         <b>Mechanics of shell systems:</b>
         <br />
         Corresponding Member of NAS of Ukraine, Doctor of Physical and
-        Mathematical Sciences, O.Ya.&nbsp;Grigorenko,
+        Mathematical Sciences O.Ya.&nbsp;Grigorenko,
         <br />
-        Doctor of Technical Sciences, P.Z.&nbsp;Lugovoy
+        Doctor of Technical Sciences P.Z.&nbsp;Lugovoy
         <br />
         <br />
       </li>
@@ -385,9 +376,9 @@ text.En.main.articles[4] = (
           Mechanics of coherent fields in materials and structural elements:
         </b>
         <br />
-        Doctor of Technical Sciences, O.Z.&nbsp;Galishyn,
+        Doctor of Technical Sciences O.Z.&nbsp;Galishyn,
         <br />
-        Doctor of Physical and Mathematical Sciences , V.G.&nbsp;Karnaukhov
+        Doctor of Physical and Mathematical Sciences V.G.&nbsp;Karnaukhov
         <br />
         <br />
       </li>
@@ -395,9 +386,9 @@ text.En.main.articles[4] = (
         <b>Fracture and Fatigue Mechanics:</b>
         <br />
         Corresponding Member of NAS of Ukraine, Doctor of Physical and
-        Mathematical Sciences, M.F.&nbsp;Selivanov
+        Mathematical Sciences M.F.&nbsp;Selivanov,
         <br />
-        Doctor of Technical Sciences, V.P.&nbsp;Golub,
+        Doctor of Technical Sciences V.P.&nbsp;Golub
         <br />
         <br />
       </li>
@@ -405,10 +396,10 @@ text.En.main.articles[4] = (
         <b>Dynamics and stability of movement of mechanical systems:</b>
         <br />
         Academician of NAS of Ukraine, Doctor Physical and Mathematical
-        Sciences, V.D.&nbsp;Kubenko,
+        Sciences V.D.&nbsp;Kubenko,
         <br />
         Academician of NAS of Ukraine, Doctor Physical and Mathematical
-        Sciences, A.A.&nbsp;Martyniuk
+        Sciences A.A.&nbsp;Martyniuk
         <br />
       </li>
     </ul>
@@ -430,8 +421,8 @@ text.En.main.articles[5] = (
     <ul className="ul_downloads">
       <li>
         <a
-          href="./files/announcement_uk.docx"
-          download="./files/announcement_uk.docx"
+          href="./files/announcement_en.docx"
+          download="./files/announcement_en.docx"
         >
           <img src="./img/file.svg" alt="file"></img>
           <p>information letter-message</p>
@@ -452,3 +443,19 @@ text.En.main.articles[5] = (
     </ul>
   </>
 );
+
+
+// Додаткова
+// інформація, електронна версія реєстраційної форми, а також зразки
+// оформлення матеріалів доповіді розміщено на вебсторінці конференції за
+// адресою: {`  `}
+// <a href="https://inmech.kyiv.ua/l/ua/conferences/">
+//   https://inmech.kyiv.ua...
+// </a>{" "}
+
+// Additional information,
+//       an electronic version of the registration form, as well as samples of
+//       presentation materials are available on the conference website at {` `}
+//       <a href="https://inmech.kyiv.ua/l/ua/conferences/">
+//         https://inmech.kyiv.ua...
+//       </a>

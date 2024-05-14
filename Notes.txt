@@ -4,3 +4,6 @@ CSS Custom Properties that Dynamically Update with React & JavaScript
 	 document.documentElement.style.setProperty("--transp", `${props.ratio / 100}`);
 
 Неразрывный пробел (наук, В.Л.&nbsp;Богданов,)
+
+Detect click outside React component
+	https://stackoverflow.com/questions/32553158/detect-click-outside-react-component
