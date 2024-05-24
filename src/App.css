@@ -57,10 +57,14 @@ h2 {
 .ul_downloads{
   list-style: none;
 }
+.ul_downloads li{
+ margin-bottom: 1rem;
+}
 .ul_downloads a{
   display: flex;
   justify-content: start;
   align-items: center;
+  width: max-content;
 }
 
 

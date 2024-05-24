@@ -102,6 +102,8 @@ text.Ukr.main.articles[2] = (
       </em>
       .
     </p>
+    <p>Робочі мови конференції: Англійська, Українська.</p>
+    <p>Конференція відбуватиметься у змішаному форматі (онлайн та офлайн).</p>
     <p>
       Матеріали конференції буде опубліковано на сайті Інституту механіки ім.
       С.П. Тимошенка. Кожен учасник, який виступить із доповіддю, отримає
@@ -207,7 +209,7 @@ text.Ukr.main.articles[4] = (
     <br />
     Доктор фізико-математичних наук В.А.&nbsp;Максимюк,
     <br />
-    Кандидат фізико-математичних наук Л.М.&nbsp;Терещенко
+    Кандидат фізико-математичних наук Л.М.&nbsp;Терещенко,
     <br />
     Кандидат технічних наук П.В.&nbsp;Фернаті,
     <br />
@@ -225,19 +227,25 @@ text.Ukr.main.articles[5] = (
           download="./files/announcement_uk.docx"
         >
           <img src="./img/file.svg" alt="file"></img>
-          <p>Інформаційний лист</p>
+          Інформаційний лист
         </a>
       </li>
       <li>
         <a href="./files/form_uk.doc" download="./files/form_uk.doc">
           <img src="./img/file.svg" alt="file"></img>
-          <p>Реєстраційна форма</p>
+          Реєстраційна форма
         </a>
       </li>
       <li>
         <a href="./files/sample_uk.pdf" download="./files/sample_uk.pdf">
           <img src="./img/file.svg" alt="file"></img>
-          <p>Зразок оформлення доповідей</p>
+          Зразок оформлення доповідей (pdf)
+        </a>
+      </li>
+      <li>
+        <a href="./files/sample_uk.tex" download="./files/sample_uk.tex">
+          <img src="./img/file.svg" alt="file"></img>
+          Зразок оформлення доповідей (tex)
         </a>
       </li>
     </ul>
@@ -300,6 +308,8 @@ text.En.main.articles[2] = (
       </em>
       .
     </p>
+    <p>The Conference languages are: Ukrainian, English.</p>
+    <p>The conference will take place in a mixed format (online and offline).</p>
     <p>
       The materials of the conference will be published on the website of the
       S.P. Timoshenko Institute of Mechanics. Each participant who presents an
@@ -411,7 +421,7 @@ text.En.main.articles[4] = (
     <br />
     Candidate of Technical Sciences P.V.&nbsp;Fernati,
     <br />
-    Candidate of Physical and Mathematical Sciences О.О.&nbsp;Khotenko,
+    Candidate of Physical and Mathematical Sciences О.О.&nbsp;Khotenko
     <br />
   </>
 );
@@ -425,19 +435,25 @@ text.En.main.articles[5] = (
           download="./files/announcement_en.docx"
         >
           <img src="./img/file.svg" alt="file"></img>
-          <p>information letter-message</p>
+          information letter-message
         </a>
       </li>
       <li>
         <a href="./files/form_en.doc" download="./files/form_en.doc">
           <img src="./img/file.svg" alt="file"></img>
-          <p>Registration form</p>
+          Registration form
         </a>
       </li>
       <li>
         <a href="./files/sample_en.pdf" download="./files/sample_en.pdf">
           <img src="./img/file.svg" alt="file"></img>
-          <p>Report design sample</p>
+          Report design sample (pdf)
+        </a>
+      </li>
+      <li>
+        <a href="./files/sample_en.tex" download="./files/sample_en.tex">
+          <img src="./img/file.svg" alt="file"></img>
+          Report design sample (tex)
         </a>
       </li>
     </ul>
