@@ -243,6 +243,12 @@ text.Ukr.main.articles[5] = (
         </a>
       </li>
       <li>
+        <a href="./files/sample_uk.docx" download="./files/sample_uk.docx">
+          <img src="./img/file.svg" alt="file"></img>
+          Зразок оформлення доповідей (docx)
+        </a>
+      </li>
+      <li>
         <a href="./files/sample_uk.tex" download="./files/sample_uk.tex">
           <img src="./img/file.svg" alt="file"></img>
           Зразок оформлення доповідей (tex)
@@ -448,6 +454,12 @@ text.En.main.articles[5] = (
         <a href="./files/sample_en.pdf" download="./files/sample_en.pdf">
           <img src="./img/file.svg" alt="file"></img>
           Report design sample (pdf)
+        </a>
+      </li>
+      <li>
+        <a href="./files/sample_en.docx" download="./files/sample_en.docx">
+          <img src="./img/file.svg" alt="file"></img>
+          Report design sample (docx)
         </a>
       </li>
       <li>
