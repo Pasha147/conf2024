@@ -136,6 +136,12 @@ text.Ukr.main.articles[3] = (
 text.Ukr.main.articles[4] = (
   <>
     <p>
+      <b> Співорганізатор конференції:</b>
+      <br />
+      Національний комітет України з теоретичної і прикладної механіки
+      <br />
+    </p>
+    <p>
       <b> Співголови оргкомітету:</b>
       <br />
       Академік НАН України, Доктор фізико-математичних наук В.Л.&nbsp;Богданов,
@@ -345,6 +351,12 @@ text.En.main.articles[3] = (
 
 text.En.main.articles[4] = (
   <>
+  <p>
+      <b> Co-organizer of the conference:</b>
+      <br />
+      National Commitee of Ukraine of Technical and Applied Mechanics
+      <br />
+    </p>
     <p>
       <b>Co-chairs of the organizing committee:</b>
       <br />

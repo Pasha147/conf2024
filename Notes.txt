@@ -1,3 +1,84 @@
+
+The error you're encountering indicates that the Terser plugin, which is used for minifying JavaScript files in the build process, is encountering an unexpected token. This is likely due to the fact that arrayData.js is being treated as a JavaScript module, but it's being evaluated as a script, which can cause syntax issues during minification.
+
+To solve this, we can ensure that the data is properly formatted and handled. Instead of trying to fetch and evaluate a JavaScript module, we can convert the array data to JSON and handle it accordingly. Here’s a step-by-step guide to achieve this:
+
+Step-by-Step Guide
+Step 1: Create a JSON File for Your Data
+Convert your arrayData.js to a JSON file, which will be easier to handle and won't cause issues during the minification process.
+
+Create a new file arrayData.json in the src directory:
+json
+Копировать код
+// src/arrayData.json
+[
+  { "id": 1, "name": "Item 1" },
+  { "id": 2, "name": "Item 2" },
+  { "id": 3, "name": "Item 3" }
+]
+Step 2: Configure Webpack to Copy the JSON File
+Use the copy-webpack-plugin to copy the JSON file to the build directory. This avoids the need for evaluation and minification issues.
+
+Ensure react-app-rewired and customize-cra are installed:
+bash
+Копировать код
+npm install react-app-rewired customize-cra copy-webpack-plugin --save-dev
+Create a config-overrides.js file in the root of your project:
+javascript
+Копировать код
+const { override, addWebpackPlugin } = require('customize-cra');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+
+module.exports = override(
+  addWebpackPlugin(
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: 'src/arrayData.json', to: 'arrayData.json' },
+      ],
+    })
+  )
+);
+Update your package.json scripts to use react-app-rewired:
+json
+Копировать код
+"scripts": {
+  "start": "react-app-rewired start",
+  "build": "react-app-rewired build",
+  "test": "react-app-rewired test",
+  "eject": "react-scripts eject"
+}
+Step 3: Fetch the JSON File in Your Component
+Modify your React component to fetch the JSON file and parse it:
+
+javascript
+Копировать код
+import React, { useEffect, useState } from 'react';
+
+const MyComponent = () => {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    fetch('/arrayData.json')
+      .then((response) => response.json())
+      .then((data) => setData(data))
+      .catch((error) => console.error('Error loading the data:', error));
+  }, []);
+
+  return (
+    <div>
+      {data.map(item => (
+        <div key={item.id}>{item.name}</div>
+      ))}
+    </div>
+  );
+};
+
+export default MyComponent;
+Summary
+By converting your data file to JSON, you avoid the minification issues caused by the Terser plugin. Using the copy-webpack-plugin, you ensure that the JSON file is copied to the build directory. Your React component can then fetch and parse the JSON file at runtime, maintaining the separation of the data file in the build output. This approach is more robust and avoids potential pitfalls associated with evaluating JavaScript modules dynamically.
+
+It's work! Thank you very much!
+-----------------======================--------------
 CSS Custom Properties that Dynamically Update with React & JavaScript
 	https://www.youtube.com/watch?v=nybATB2MoYI&ab_channel=ColbyFayock
 
