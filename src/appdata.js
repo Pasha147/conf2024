@@ -354,7 +354,7 @@ text.En.main.articles[4] = (
   <p>
       <b> Co-organizer of the conference:</b>
       <br />
-      National Commitee of Ukraine of Technical and Applied Mechanics
+      National Committee of Ukraine on Theoretical and Applied Mechanics
       <br />
     </p>
     <p>
