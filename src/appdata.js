@@ -185,7 +185,9 @@ text.Ukr.main.articles[4] = (
       <li>
         <b>Механіка зв'язних полів у матеріалах та елементах конструкцій:</b>
         <br />
-        Доктор технічних наук О.З.&nbsp;Галішин, <br />
+        Член-кореспондент НАН України, Доктор фізико-математичних наук
+         Я.О.&nbsp;Жук, 
+         <br />  
         Доктор фізико-математичних наук В.Г.&nbsp;Карнаухов
         <br />
         <br />
@@ -404,7 +406,9 @@ text.En.main.articles[4] = (
           Mechanics of coherent fields in materials and structural elements:
         </b>
         <br />
-        Doctor of Technical Sciences O.Z.&nbsp;Galishyn,
+        Corresponding Member of NAS of Ukraine, Doctor of Physical and
+        Mathematical Sciences
+         Ya.O.&nbsp;Zhuk,  
         <br />
         Doctor of Physical and Mathematical Sciences V.G.&nbsp;Karnaukhov
         <br />
