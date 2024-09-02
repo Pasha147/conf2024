@@ -7,6 +7,7 @@ export const text = {
     menu: {
       links: [
         { name: "Про конференцію" },
+        { name: "Продовж. подання" },
         { name: "Напрямки" },
         { name: "Щодо участі" },
         { name: "Вимоги" },
@@ -32,6 +33,7 @@ export const text = {
     menu: {
       links: [
         { name: "About conference" },
+        { name: "Deadline extended" },
         { name: "Research fields" },
         { name: "To participate in" },
         { name: "Requirements" },
@@ -46,7 +48,7 @@ export const text = {
       p1: " S.P.Timoshenko Institute of Mechanics, National Academy of Sciences of Ukraine",
       p2: " 03057 Kyiv, Ukraine, str. Nesterova, 3.",
       em: "Email: conference@inmech.kyiv.ua",
-      phone: 'Phone: +380(98)903-51-05',
+      phone: "Phone: +380(98)903-51-05",
     },
   },
 };
@@ -74,6 +76,22 @@ text.Ukr.main.articles[0] = (
 
 text.Ukr.main.articles[1] = (
   <>
+    <h2 style={{ textAlign: "start" }}>
+      Продовження терміну подання матеріалів
+    </h2>
+    <p style={{ textAlign: "justify" }}>
+      Вельмишановні Колеги!
+      <br />
+      <br />
+      Повідомляємо, що термін подання матеріалів для участі у конференції
+      продовжено до 15 вересня 2021 року.
+      <br />
+      <br />З повагою,<br /> Оргкомітет.
+    </p>
+  </>
+);
+text.Ukr.main.articles[2] = (
+  <>
     <p>На конференції передбачаються доповіді з таких напрямків:</p>
     <ol>
       <li>Механіка композитних та неоднорідних середовищ</li>
@@ -85,7 +103,7 @@ text.Ukr.main.articles[1] = (
   </>
 );
 
-text.Ukr.main.articles[2] = (
+text.Ukr.main.articles[3] = (
   <>
     <h2 style={{ textAlign: "start" }}>
       Для участі у роботі конференції необхідно:
@@ -114,7 +132,7 @@ text.Ukr.main.articles[2] = (
   </>
 );
 
-text.Ukr.main.articles[3] = (
+text.Ukr.main.articles[4] = (
   <>
     <h2 style={{ textAlign: "start" }}>
       Вимоги до оформлення матеріалів доповіді:
@@ -126,14 +144,12 @@ text.Ukr.main.articles[3] = (
       <br />
       Анкети та тексти доповідей, які стосуються напрямків розвитку механіки
       (1–5), просимо надсилати за адресою conference@inmech.kyiv.ua. До розгляду
-      буде прийматися не більше 2-х доповідей одного учасника. 
-      
-     
+      буде прийматися не більше 2-х доповідей одного учасника.
     </p>
   </>
 );
 
-text.Ukr.main.articles[4] = (
+text.Ukr.main.articles[5] = (
   <>
     <p>
       <b> Співорганізатор конференції:</b>
@@ -186,8 +202,8 @@ text.Ukr.main.articles[4] = (
         <b>Механіка зв'язних полів у матеріалах та елементах конструкцій:</b>
         <br />
         Член-кореспондент НАН України, Доктор фізико-математичних наук
-         Я.О.&nbsp;Жук, 
-         <br />  
+        Я.О.&nbsp;Жук,
+        <br />
         Доктор фізико-математичних наук В.Г.&nbsp;Карнаухов
         <br />
         <br />
@@ -205,11 +221,9 @@ text.Ukr.main.articles[4] = (
       <li>
         <b>Динаміка та стійкість руху механічних систем:</b>
         <br />
-        Академік НАН України, Доктор фізико-математичних наук
-        В.Д.&nbsp;Кубенко,
+        Академік НАН України, Доктор фізико-математичних наук В.Д.&nbsp;Кубенко,
         <br />
-        Академік НАН України, Доктор фізико-математичних наук
-        А.А.&nbsp;Мартинюк
+        Академік НАН України, Доктор фізико-математичних наук А.А.&nbsp;Мартинюк
         <br />
       </li>
     </ul>
@@ -225,7 +239,7 @@ text.Ukr.main.articles[4] = (
     <br />
   </>
 );
-text.Ukr.main.articles[5] = (
+text.Ukr.main.articles[6] = (
   <>
     <h2 style={{ textAlign: "start" }}>Завантаження</h2>
     <ul className="ul_downloads">
@@ -292,6 +306,23 @@ text.En.main.articles[0] = (
 
 text.En.main.articles[1] = (
   <>
+    <h2 style={{ textAlign: "start" }}>The submission deadline is extended</h2>
+    <p style={{ textAlign: "justify" }}>
+      Dear collegues,
+      <br />
+      <br />
+      The submission deadline of MCAFD 2024 is extended to Sept. 15, 2024.
+      <br />
+      <br />
+      Sincerely,
+      <br />
+      Organizing Committee.
+    </p>
+  </>
+);
+
+text.En.main.articles[2] = (
+  <>
     <p>
       The conference anticipates receiving reports from the following
       specialized research fields:
@@ -306,7 +337,7 @@ text.En.main.articles[1] = (
   </>
 );
 
-text.En.main.articles[2] = (
+text.En.main.articles[3] = (
   <>
     <h2 style={{ textAlign: "start" }}>
       To participate in the work of the conference, you have to
@@ -323,7 +354,9 @@ text.En.main.articles[2] = (
       .
     </p>
     <p>The Conference languages are: Ukrainian, English.</p>
-    <p>The conference will take place in a mixed format (online and offline).</p>
+    <p>
+      The conference will take place in a mixed format (online and offline).
+    </p>
     <p>
       The materials of the conference will be published on the website of the
       S.P. Timoshenko Institute of Mechanics. Each participant who presents an
@@ -334,7 +367,7 @@ text.En.main.articles[2] = (
   </>
 );
 
-text.En.main.articles[3] = (
+text.En.main.articles[4] = (
   <>
     <h2 style={{ textAlign: "start" }}>
       Requirements for preparation of report materials:
@@ -346,14 +379,14 @@ text.En.main.articles[3] = (
       <br />
       Questionnaires and texts of reports to the branches of mechanics (1–5)
       should be sent to the address conference@inmech.kyiv.ua. No more than 2
-      reports from one participant will be considered. 
+      reports from one participant will be considered.
     </p>
   </>
 );
 
-text.En.main.articles[4] = (
+text.En.main.articles[5] = (
   <>
-  <p>
+    <p>
       <b> Co-organizer of the conference:</b>
       <br />
       National Committee of Ukraine on Theoretical and Applied Mechanics
@@ -362,8 +395,8 @@ text.En.main.articles[4] = (
     <p>
       <b>Co-chairs of the organizing committee:</b>
       <br />
-      Academician of NAS of Ukraine, Doctor of Physical and Mathematical Sciences
-      V.L.&nbsp;Bohdanov,
+      Academician of NAS of Ukraine, Doctor of Physical and Mathematical
+      Sciences V.L.&nbsp;Bohdanov,
       <br />
       Academician of NAS of Ukraine, Doctor of Technical Sciences
       V.M.&nbsp;Nazarenko
@@ -407,8 +440,7 @@ text.En.main.articles[4] = (
         </b>
         <br />
         Corresponding Member of NAS of Ukraine, Doctor of Physical and
-        Mathematical Sciences
-         Ya.O.&nbsp;Zhuk,  
+        Mathematical Sciences Ya.O.&nbsp;Zhuk,
         <br />
         Doctor of Physical and Mathematical Sciences V.G.&nbsp;Karnaukhov
         <br />
@@ -427,11 +459,11 @@ text.En.main.articles[4] = (
       <li>
         <b>Dynamics and stability of movement of mechanical systems:</b>
         <br />
-        Academician of NAS of Ukraine, Doctor Physical and Mathematical
-        Sciences V.D.&nbsp;Kubenko,
+        Academician of NAS of Ukraine, Doctor Physical and Mathematical Sciences
+        V.D.&nbsp;Kubenko,
         <br />
-        Academician of NAS of Ukraine, Doctor Physical and Mathematical
-        Sciences A.A.&nbsp;Martyniuk
+        Academician of NAS of Ukraine, Doctor Physical and Mathematical Sciences
+        A.A.&nbsp;Martyniuk
         <br />
       </li>
     </ul>
@@ -439,7 +471,7 @@ text.En.main.articles[4] = (
     <br />
     Doctor Physical and Mathematical Sciences V.A.&nbsp;Maksymyuk,
     <br />
-    Candidate of Physical and Mathematical Sciences L.M.&nbsp;Tereshchenko, 
+    Candidate of Physical and Mathematical Sciences L.M.&nbsp;Tereshchenko,
     <br />
     Candidate of Technical Sciences P.V.&nbsp;Fernati,
     <br />
@@ -447,7 +479,7 @@ text.En.main.articles[4] = (
     <br />
   </>
 );
-text.En.main.articles[5] = (
+text.En.main.articles[6] = (
   <>
     <h2 style={{ textAlign: "start" }}>Downloads</h2>
     <ul className="ul_downloads">
@@ -487,7 +519,6 @@ text.En.main.articles[5] = (
     </ul>
   </>
 );
-
 
 // Додаткова
 // інформація, електронна версія реєстраційної форми, а також зразки
