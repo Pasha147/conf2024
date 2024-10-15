@@ -245,6 +245,15 @@ text.Ukr.main.articles[6] = (
     <ul className="ul_downloads">
     <li>
         <a
+          href="./files/proceedings2.pdf"
+          download="./files/proceedings2.pdf"
+        >
+          <img src="./img/file.svg" alt="file"></img>
+          Матеріали конференції
+        </a>
+      </li>
+    <li>
+        <a
           href="./files/agenda_1.pdf"
           download="./files/agenda_1.pdf"
         >
@@ -492,6 +501,15 @@ text.En.main.articles[6] = (
   <>
     <h2 style={{ textAlign: "start" }}>Downloads</h2>
     <ul className="ul_downloads">
+    <li>
+        <a
+          href="./files/proceedings2.pdf"
+          download="./files/proceedings2.pdf"
+        >
+          <img src="./img/file.svg" alt="file"></img>
+          Conference proceedings
+        </a>
+      </li>
     <li>
         <a
           href="./files/agenda_1.pdf"
