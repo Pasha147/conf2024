@@ -7,7 +7,6 @@ export const text = {
     menu: {
       links: [
         { name: "Про конференцію" },
-        { name: "Продовж. подання" },
         { name: "Напрямки" },
         { name: "Щодо участі" },
         { name: "Вимоги" },
@@ -33,7 +32,6 @@ export const text = {
     menu: {
       links: [
         { name: "About conference" },
-        { name: "Deadline extended" },
         { name: "Research fields" },
         { name: "To participate in" },
         { name: "Requirements" },
@@ -76,22 +74,6 @@ text.Ukr.main.articles[0] = (
 
 text.Ukr.main.articles[1] = (
   <>
-    <h2 style={{ textAlign: "start" }}>
-      Продовження терміну подання матеріалів
-    </h2>
-    <p style={{ textAlign: "justify" }}>
-      Вельмишановні Колеги!
-      <br />
-      <br />
-      Повідомляємо, що термін подання матеріалів для участі у конференції
-      продовжено до 15 вересня 2021 року.
-      <br />
-      <br />З повагою,<br /> Оргкомітет.
-    </p>
-  </>
-);
-text.Ukr.main.articles[2] = (
-  <>
     <p>На конференції передбачаються доповіді з таких напрямків:</p>
     <ol>
       <li>Механіка композитних та неоднорідних середовищ</li>
@@ -103,7 +85,7 @@ text.Ukr.main.articles[2] = (
   </>
 );
 
-text.Ukr.main.articles[3] = (
+text.Ukr.main.articles[2] = (
   <>
     <h2 style={{ textAlign: "start" }}>
       Для участі у роботі конференції необхідно:
@@ -132,7 +114,7 @@ text.Ukr.main.articles[3] = (
   </>
 );
 
-text.Ukr.main.articles[4] = (
+text.Ukr.main.articles[3] = (
   <>
     <h2 style={{ textAlign: "start" }}>
       Вимоги до оформлення матеріалів доповіді:
@@ -149,7 +131,7 @@ text.Ukr.main.articles[4] = (
   </>
 );
 
-text.Ukr.main.articles[5] = (
+text.Ukr.main.articles[4] = (
   <>
     <p>
       <b> Співорганізатор конференції:</b>
@@ -239,7 +221,7 @@ text.Ukr.main.articles[5] = (
     <br />
   </>
 );
-text.Ukr.main.articles[6] = (
+text.Ukr.main.articles[5] = (
   <>
     <h2 style={{ textAlign: "start" }}>Завантаження</h2>
     <ul className="ul_downloads">
@@ -322,24 +304,9 @@ text.En.main.articles[0] = (
   </>
 );
 
-text.En.main.articles[1] = (
-  <>
-    <h2 style={{ textAlign: "start" }}>The submission deadline is extended</h2>
-    <p style={{ textAlign: "justify" }}>
-      Dear collegues,
-      <br />
-      <br />
-      The submission deadline of MCAFD 2024 is extended to Sept. 15, 2024.
-      <br />
-      <br />
-      Sincerely,
-      <br />
-      Organizing Committee.
-    </p>
-  </>
-);
 
-text.En.main.articles[2] = (
+
+text.En.main.articles[1] = (
   <>
     <p>
       The conference anticipates receiving reports from the following
@@ -355,7 +322,7 @@ text.En.main.articles[2] = (
   </>
 );
 
-text.En.main.articles[3] = (
+text.En.main.articles[2] = (
   <>
     <h2 style={{ textAlign: "start" }}>
       To participate in the work of the conference, you have to
@@ -385,7 +352,7 @@ text.En.main.articles[3] = (
   </>
 );
 
-text.En.main.articles[4] = (
+text.En.main.articles[3] = (
   <>
     <h2 style={{ textAlign: "start" }}>
       Requirements for preparation of report materials:
@@ -402,7 +369,7 @@ text.En.main.articles[4] = (
   </>
 );
 
-text.En.main.articles[5] = (
+text.En.main.articles[4] = (
   <>
     <p>
       <b> Co-organizer of the conference:</b>
@@ -497,7 +464,7 @@ text.En.main.articles[5] = (
     <br />
   </>
 );
-text.En.main.articles[6] = (
+text.En.main.articles[5] = (
   <>
     <h2 style={{ textAlign: "start" }}>Downloads</h2>
     <ul className="ul_downloads">
